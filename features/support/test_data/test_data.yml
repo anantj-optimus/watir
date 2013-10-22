@@ -1,0 +1,10 @@
+urls:
+  register: 'https://bitly.com/a/sign_up'
+  home: 'https://accounts.google.com/ServiceLogin?passive=true&uilel=3&hl=en_US&continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26feature%3Dsign_in_button%26hl%3Den_US%26next%3D%252F%26nomobiletemp%3D1&service=youtube'
+  login: 'https://bitly.com/a/sign_in'
+
+default_user:
+  email: asdf@asdf.com
+  password: asdf
+  confirmPassword: asdf2
+  username: asdf

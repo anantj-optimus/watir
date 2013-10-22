@@ -1,103 +1,119 @@
 [
   {
-    "source": "^I am on the (.+) Home Page$",
+    "source": "^I click to the Home Page$",
     "flags": "",
-    "file_colon_line": "features/step_definitions/search_steps.rb:1",
+    "file_colon_line": "features/step_definitions/homepage_steps.rb:1",
     "steps": [
       {
-        "name": "I am on the <search engine> Home Page",
+        "name": "I click to the Home Page",
         "args": [
-          {
-            "offset": 12,
-            "val": "<search engine>"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^I search for a? ?\"([^\"]*)\"$",
-    "flags": "",
-    "file_colon_line": "features/step_definitions/search_steps.rb:6",
-    "steps": [
-      {
-        "name": "I search for \"Watir\"",
-        "args": [
-          {
-            "offset": 14,
-            "val": "Watir"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^I search for a?n? ?([^\"].+[^\"])$",
-    "flags": "",
-    "file_colon_line": "features/step_definitions/search_steps.rb:12",
-    "steps": [
-      {
-        "name": "I search for a ridiculously small number of results",
-        "args": [
-          {
-            "offset": 15,
-            "val": "ridiculously small number of results"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^I should see at least ([\\d,]+) results$",
-    "flags": "",
-    "file_colon_line": "features/step_definitions/search_steps.rb:19",
-    "steps": [
 
-    ]
-  },
-  {
-    "source": "^I should see at most ([\\d,]+) results$",
-    "flags": "",
-    "file_colon_line": "features/step_definitions/search_steps.rb:25",
-    "steps": [
-      {
-        "name": "I should see at most 200 results",
-        "args": [
-          {
-            "offset": 21,
-            "val": "200"
-          }
         ]
       }
     ]
   },
   {
-    "source": "^I convert (.+)$",
+    "source": "^I click the Register Link$",
     "flags": "",
-    "file_colon_line": "features/step_definitions/search_steps.rb:31",
+    "file_colon_line": "features/step_definitions/homepage_steps.rb:5",
     "steps": [
       {
-        "name": "I convert 10 cm to inches",
+        "name": "I click the Register Link",
         "args": [
-          {
-            "offset": 10,
-            "val": "10 cm to inches"
-          }
+
         ]
       }
     ]
   },
   {
-    "source": "^I should see the conversion result \"([^\"]*)\"$",
+    "source": "^I should be taken to the registration page$",
     "flags": "",
-    "file_colon_line": "features/step_definitions/search_steps.rb:37",
+    "file_colon_line": "features/step_definitions/homepage_steps.rb:10",
     "steps": [
       {
-        "name": "I should see the conversion result \"<as expected>\"",
+        "name": "I should be taken to the registration page",
+        "args": [
+
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I am on the Registration Page$",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/homepage_steps.rb:14",
+    "steps": [
+      {
+        "name": "I am on the Registration Page",
+        "args": [
+
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I fill in the values using a random profile$",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/homepage_steps.rb:19",
+    "steps": [
+      {
+        "name": "I fill in the values using a random profile",
+        "args": [
+
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I click submit$",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/homepage_steps.rb:30",
+    "steps": [
+      {
+        "name": "I click submit",
+        "args": [
+
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I should see the success page$",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/homepage_steps.rb:34",
+    "steps": [
+      {
+        "name": "I should see the success page",
+        "args": [
+
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I fill in the values using a default profile$",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/homepage_steps.rb:39",
+    "steps": [
+      {
+        "name": "I fill in the values using a default profile",
+        "args": [
+
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I should see the error on password field with text \"([^\"]*)\"$",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/homepage_steps.rb:43",
+    "steps": [
+      {
+        "name": "I should see the error on password field with text \"Passwords don't match\"",
         "args": [
           {
-            "offset": 36,
-            "val": "<as expected>"
+            "offset": 52,
+            "val": "Passwords don't match"
           }
         ]
       }

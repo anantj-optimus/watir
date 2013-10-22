@@ -1,16 +1,13 @@
-TEST_DATA_DIR = "./features/support/test_data"
-$: << File.dirname(__FILE__)+'/../../lib'
-
 require 'watir-webdriver'
-require 'watir-page-helper/commands'
+require 'page-object'
+require 'page-object/page_factory'
+require 'rspec-expectations'
+require 'data_magic'
 
-World WatirPageHelper::Commands
+World(PageObject::PageFactory)
 
-WatirPageHelper.create
-
-After do
-  WatirPageHelper.browser.cookies.clear
-end
+TEST_DATA_DIR = "./features/support/test_data"
+DataMagic.yml_directory = './features/support/test_data/' #Tells data magic to look for data in
 
 if ENV['HEADLESS'] == 'true'
   require 'headless'
@@ -20,9 +17,5 @@ if ENV['HEADLESS'] == 'true'
 
   at_exit do
     headless.destroy
-  end
-else
-  at_exit do
-    WatirPageHelper.close
   end
 end
