@@ -1,5 +1,6 @@
 Before do
-  @browser = Watir::Browser.new(:firefox, :profile => "default")
+ # @browser = Watir::Browser.new(:firefox, :profile => "default")
+  @browser = Selenium::WebDriver::Remote::Http::Default.new
 end
 
 After do |scenario|
