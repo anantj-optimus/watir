@@ -4,6 +4,9 @@ require 'page-object/page_factory'
 require 'rspec-expectations'
 require 'data_magic'
 
+require 'selenium-webdriver'
+Selenium::WebDriver::Firefox::Binary.path='/usr/bin/firefox/firefox'
+
 World(PageObject::PageFactory)
 
 TEST_DATA_DIR = "./features/support/test_data"
