@@ -5,7 +5,7 @@ require 'rspec-expectations'
 require 'data_magic'
 
 require 'selenium-webdriver'
-Selenium::WebDriver::Firefox::Binary.path='/opt/firefox/firefox'
+#Selenium::WebDriver::Firefox::Binary.path='/opt/firefox/firefox'
 
 World(PageObject::PageFactory)
 
